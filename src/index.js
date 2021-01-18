@@ -3,7 +3,7 @@ const express = require('express');
 const routes = require('./routes');
 const app = express();
 require('dotenv').config();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
